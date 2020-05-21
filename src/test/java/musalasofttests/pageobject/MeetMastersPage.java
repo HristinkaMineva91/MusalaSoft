@@ -30,12 +30,12 @@ public class MeetMastersPage extends Page {
         Assert.assertEquals(url, driver.getCurrentUrl());
     }
 
-    public void verifyThatTheCompanyLogoIsDisplayed(String message) {
-        Assert.assertTrue(message, companyLogo.isDisplayed());
+    public void verifyThatTheCompanyLogoIsDisplayed() {
+        Assert.assertTrue("The company logo is not displayed!", companyLogo.isDisplayed());
     }
 
-    public void verifyThatTheProfilePictureIsDisplayed(String message) {
-        Assert.assertTrue(message, profilePicture.isDisplayed());
+    public void verifyThatTheProfilePictureIsDisplayed() {
+        Assert.assertTrue("The profile picture is not displayed!", profilePicture.isDisplayed());
     }
 
     private void closeCurrentTab() {

@@ -35,7 +35,7 @@ public class SignInTests {
             signInPage.fillSignInForm(pair.get("username"), pair.get("password"));
             signInPage.assertThatErrorMessageIsShown("Wrong user or password.");
         }
-        
+
         DriverUtility.quitDriver(driver);
     }
 
@@ -49,11 +49,11 @@ public class SignInTests {
         meetMasterPage.clickOnMusalaSoftLink();
 
         meetMasterPage.verifyThatTheCorrectUrlIsLoaded("https://masters.musala.com/");
-        meetMasterPage.verifyThatTheCompanyLogoIsDisplayed("The company logo is not displayed!");
+        meetMasterPage.verifyThatTheCompanyLogoIsDisplayed();
 
         meetMasterPage.clickOnFacebookLink();
 
-        meetMasterPage.verifyThatTheProfilePictureIsDisplayed("The profile picture is not displayed!");
+        meetMasterPage.verifyThatTheProfilePictureIsDisplayed();
 
         DriverUtility.quitDriver(driver);
     }
