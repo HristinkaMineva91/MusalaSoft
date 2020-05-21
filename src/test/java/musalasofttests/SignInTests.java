@@ -53,6 +53,7 @@ public class SignInTests {
 
         meetMasterPage.clickOnFacebookLink();
 
+        meetMasterPage.verifyThatTheCorrectUrlIsLoaded("https://www.facebook.com/MUFFINconference/");
         meetMasterPage.verifyThatTheProfilePictureIsDisplayed();
 
         DriverUtility.quitDriver(driver);
